@@ -1,0 +1,194 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Y芳法律顾问知识库",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://raw.githubusercontent.com/Xiaofan001016/yuanfang-guwen/main"
+    }
+  ],
+  "paths": {
+    "/Guide.md": {
+      "get": {
+        "operationId": "readGuide",
+        "summary": "知识库使用指南与分组索引",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledge_index.md": {
+      "get": {
+        "operationId": "readKnowledgeIndex",
+        "summary": "法律法规全文档案索引",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/IPCoreLaws.md": {
+      "get": {
+        "operationId": "readIPCoreLaws",
+        "summary": "知识产权核心法律（著作权法、专利法、商标法、反不正当竞争法）",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/DataSecurityLaws.md": {
+      "get": {
+        "operationId": "readDataSecurityLaws",
+        "summary": "数据安全法、网络安全法、个人信息保护法",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/AIRegulations.md": {
+      "get": {
+        "operationId": "readAIRegulations",
+        "summary": "AI治理规章（生成式AI办法、深度合成、算法推荐、TC260安全要求）",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/IPJudicialRules.md": {
+      "get": {
+        "operationId": "readIPJudicialRules",
+        "summary": "知识产权司法解释与配套规定",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/LocalDataRegulations.md": {
+      "get": {
+        "operationId": "readLocalDataRegulations",
+        "summary": "地方数据条例与数字经济立法",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/NationalPolicies.md": {
+      "get": {
+        "operationId": "readNationalPolicies",
+        "summary": "国家数字经济与AI发展政策",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/JuvenileProtection.md": {
+      "get": {
+        "operationId": "readJuvenileProtection",
+        "summary": "未成年人保护法律法规与政策",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MiscReference.md": {
+      "get": {
+        "operationId": "readMiscReference",
+        "summary": "参考资料与目录",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
